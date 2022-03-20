@@ -26,8 +26,17 @@ def get_message():
     share_content = jsonData['data']['share_content']
     spec = jsonData['data']['spec']
     # 返回商品名称,价格,详情，规格
-    print("获取到的数据为："+jsonData)
+    return name, float, share_content, spec
 
+# 输出商品信息
+def show():
+    # 返回值是元组，可以通过某个返回值的序号把值取出来# name = get_message()[0] # price = get_message()[1]
+    print("-------------------" + "商品：" + get_message()[0] + "-------------------")
+    print("规格：" + get_message()[3])
+    print("价格：", get_message()[1])
+    print("详细内容" + get_message()[2])
+    # print("-------------------" + get_message()[0] + "的价格波动" + "-------------------")
 
 if __name__ == '__main__':
     get_message()
+    show()
