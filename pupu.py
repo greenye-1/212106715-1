@@ -32,8 +32,8 @@ def get_message():
 # 输出商品价格变化
 def change():
     # 时间按2022-03-19 23:46:32格式输出
-    while (1 > 0):
-        time.sleep(3)
+
+    time.sleep(3)
     print("当前时间为："+time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())+"价格为",get_message()[1])
 
 # 输出商品信息
