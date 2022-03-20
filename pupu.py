@@ -1,11 +1,11 @@
-from datetime import time
+import time
 
 import requests
 
 
 def get_message():
     # 访问地址
-    url = "https://j1.pupuapi.com/client/product/storeproduct/detail/7c1208da-907a-4391-9901-35a60096a3f9/d8a2b28f-487a-44af-a1a9-4bfd4aea471b"
+    url = "https://j1.pupuapi.com/client/product/storeproduct/detail/7c1208da-907a-4391-9901-35a60096a3f9/d3401c13-4ed0-4579-ab9a-ddbce65b5933"
     # 头部信息
     headers={
         "Accept": "*/*",
