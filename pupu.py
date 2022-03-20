@@ -1,3 +1,5 @@
+from datetime import time
+
 import requests
 
 
@@ -27,6 +29,12 @@ def get_message():
     spec = jsonData['data']['spec']
     # 返回商品名称,价格,详情，规格
     return name, float, share_content, spec
+# 输出商品价格变化
+def change():
+    # 时间按2022-03-19 23:46:32格式输出
+    while (1 > 0):
+        time.sleep(3)
+    print("当前时间为："+time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())+"价格为",get_message()[1])
 
 # 输出商品信息
 def show():
@@ -40,3 +48,4 @@ def show():
 if __name__ == '__main__':
     get_message()
     show()
+    change()
