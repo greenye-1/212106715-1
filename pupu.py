@@ -38,7 +38,7 @@ def change():
 
 # 输出相关商品信息
 def show():
-    # 返回值是元组，可以通过某个返回值的序号把值取出来# name = get_message()[0] # price = get_message()[1]
+    # 返回值是元组，通过某个返回值的序号把值取出来# name = get_message()[0] # price = get_message()[1]
     print("-------------------" + "商品：" + get_message()[0] + "-------------------")
     print("规格：" + get_message()[3])
     print("价格：", get_message()[1])
