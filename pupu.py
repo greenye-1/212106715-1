@@ -36,7 +36,7 @@ def change():
     time.sleep(3)
     print("当前时间为："+time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())+"价格为",get_message()[1])
 
-# 输出商品信息
+# 输出相关商品信息
 def show():
     # 返回值是元组，可以通过某个返回值的序号把值取出来# name = get_message()[0] # price = get_message()[1]
     print("-------------------" + "商品：" + get_message()[0] + "-------------------")
